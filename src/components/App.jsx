@@ -7,9 +7,7 @@ export class App extends Component {
   };
 
   componentDidMount() {
-    fetch(
-      'https://pixabay.com/api/?key=34983998-155dfb76bac09cdf48f99cd2f&q=yellow+flowers&image_type=photo'
-    )
+    fetch('https://pixabay.com/api/?q=cat&page=1&key=your_key&image_type=photo')
       .then(res => res.json())
       .then(console.log);
   }
